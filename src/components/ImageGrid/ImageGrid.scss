@@ -1,0 +1,13 @@
+@import '../../mixins';
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-grid__image {
+  width: 50%;
+  @media (min-width: $screen-md-min) {
+    width: calc(100% / 3);
+  }
+}

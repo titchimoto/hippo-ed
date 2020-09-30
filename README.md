@@ -1,68 +1,86 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hippo React Native Frontend Developer Assessment
+==============================================
 
-## Available Scripts
+This exercise is designed to assess how you approach tasks required in your
+position as a Frontend React Native developer at Hippo. We are interested to see
+how you work as well as what your final results are; include useful Git commit
+messages and comments where you think your code may be unclear.
 
-In the project directory, you can run:
+Tasks
+-----
 
-### `yarn start`
+Using the provided `create-react-app` application in this repo  and the [Figma
+designs](https://www.figma.com/file/VayLfjL0C8ibDVF4VVObB0/Front-End-Dev-Test?node-id=0%3A1)
+please complete the following tasks:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Implement the styling for the four main body content areas on the homepage.
+  The text content has already been added to `App.tsx` in placeholder `<span>`
+  tags for your convenience. The images can be found in `Homepage-Images.zip`,
+	- Consider how these content blocks might be used on other pages in the site
+		(e.g. product sales pages) and create React Components as appropriate.
+	- Remember to implement the animations described in the 'Animation Note'
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+2. Complete the Topic Cloud styling & behavior
+  - Clicking an unselected Specialty should change which Topics are highlighted
+  - Remember to implement the selected and hover states for all items
+  - Remember to implement the animations described in the 'Animation Note'
 
-### `yarn test`
+For any details which are not clear from the designs, for example at what
+size the layouts transition from stacked to side-by-side, or how the layouts
+behave as the size grows, use your best judgement and feel free to explain
+any choices you made and why.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Browser Support
+---------------
 
-### `yarn build`
+You should test your work in the latest version of Chrome. If you use any
+features that are not supported any common browser or IE 11, you should
+mention these features and how you *would* provide a suitable fallback
+experience if your code does not do so already.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Environment
+-----------
+You can use any stable version of Node JS. The base project is written using
+TypeScript but you may use vanilla JavaScript to complete the tasks.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Coding Standard
+---------------
+Your styles should be responsive and mobile-first.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You are encouraged to use [BEM](http://getbem.com/introduction/) methodology
+for CSS classnames if you are familiar with it. If you are not familiar with
+BEM, you may use any naming strategy you like.
 
-### `yarn eject`
+Please use [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/)
+for your code. The project is set up to lint your code using:
+```sh
+yarn lint
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+If your editor is not already configured to use Prettier, you can format code
+in the project using:
+```sh
+yarn prettier-write
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Dependencies
+------------
+Please use the [Yarn](https://yarnpkg.com/) tool for dependency management. You
+can use any 3rd-party libraries as necessary or as desired in order to achieve
+the tasks.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Commits
+-------
+Your commit history is important to us! Try to make meaningful commit messages
+that show your progress.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Getting Started with the React Frontend
+---------------------------------------
+The React frontend is a bare create-react-app.
 
-## Learn More
+### Running the React Application
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+```sh
+yarn install
+yarn start
+```
