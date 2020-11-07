@@ -4,25 +4,3 @@
   margin: auto;
   max-width: $screen-xl-min;
 }
-
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  min-height: 20rem;
-
-  background: url('./images/home.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  @media (min-width: $screen-md-min) {
-    min-height: 50rem;
-  }
-}
-
-.header-container__headline {
-  text-align: center;
-  color: white;
-  width: 80%;
-}

@@ -1,17 +1,16 @@
 import React from 'react';
 import ImageGrid from './components/ImageGrid/ImageGrid';
 import TopicCloud from './components/TopicCloud/TopicCloud';
+import MainNav from './components/MainNav/MainNav';
+import Header from './components/Header/Header';
 
 import './App.scss';
 
 function App() {
   return (
     <div className="homepage">
-      <div className="header-container">
-        <h1 className="header-container__headline">
-          Empowering the people of medicine through education and community.
-        </h1>
-      </div>
+      <MainNav />
+      <Header />
       <div className="page-content">
         <span>Learn. Grow. Thrive.</span>
 
