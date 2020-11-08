@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
+import classnames from 'classnames';
 import { useTopicData } from '../../hooks/useTopicData';
 
 import './TopicCloud.scss';
 
 function TopicCloud() {
   const topics = useTopicData();
+  const [matchingTopics, setMatchingTopics] = useState([] as string[])
 
   const specialties = Array.from(
     new Set(
@@ -15,18 +17,43 @@ function TopicCloud() {
     )
   );
 
+  const handleSelect = (spec: string) => {
+    const matches = topics
+      .filter((topic) => topic.specialties.includes(spec))
+      .map(({ title }) => title);
+
+    setMatchingTopics(matches);
+  }
+
   return (
     <div className="topic-cloud">
-      <div>
-        <h4>Browse Education Topics by Specialty</h4>
-        {specialties.map((specialty) => (
-          <span>{specialty}</span>
-        ))}
-      </div>
-      <div>
-        {topics.map((topic) => (
-          <span>{topic.title}</span>
-        ))}
+      <div className="topic-cloud__container">
+        <div className="topic-cloud__specialties-container">
+          <h4 className="topic-cloud__header">Browse Education Topics by Specialty: {" "}</h4>
+          {specialties.map((specialty) => (
+            <div className="topic-cloud__specialty">
+            <div
+              className="topic-cloud__specialty-title"
+              onMouseEnter={() => handleSelect(specialty)}
+            >
+              {specialty}
+            </div>
+            <div className="topic-cloud__specialty-underline" />
+            </div>
+          ))}
+        </div>
+        <div className="topic-cloud__topics-container">
+          {topics.map((topic) => (
+            <div
+              className={`
+                ${classnames({ 'topic-cloud__topic-selected': matchingTopics.includes(topic.title) })}
+                topic-cloud__topic
+              `}
+            >
+              {topic.title}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

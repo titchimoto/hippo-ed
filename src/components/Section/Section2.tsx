@@ -1,13 +1,27 @@
 import React from 'react';
+import classnames from 'classnames';
+import { useInView } from 'react-intersection-observer';
 
 import './Section.scss';
 
 import home2 from '../../images/home2.png';
 
 function Section2() {
+
+  const [ref, inView] = useInView({ rootMargin: '10px' });
+
   return (
-    <section className="section__container">
-      <div className="section__column-left">
+    <section
+      ref={ref}
+      className={`
+        section__container
+        ${classnames({
+          'section__animate-in': inView,
+          'section__animate-out': !inView 
+        })}
+      `}
+    > 
+      <div className="section__column">
         <div className="section__column-tight">
           <div className="section__header-container">
             <h2 className="section__header">
@@ -39,7 +53,7 @@ function Section2() {
         </div>
       </div>
       
-      <div className="section__column-right">
+      <div className="section__column">
         <div className="section__image-container hide-mobile">
           <img src={home2} alt="section" />
         </div>

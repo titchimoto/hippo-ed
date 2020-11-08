@@ -11,6 +11,7 @@ import Section4 from './components/Section/Section4';
 import './App.scss';
 
 function App() {
+
   return (
     <div className="homepage">
       <MainNav />
@@ -21,7 +22,11 @@ function App() {
         <Section3 />
         <Section4 />
 
-        <h2>See (and Hear) the Hippo Difference for Yourself</h2>
+        <div className="section__column">
+          <h2 className="section__header">
+            See (and Hear) the Hippo Difference for Yourself
+          </h2>
+        </div>
         <ImageGrid />
         <TopicCloud />
       </div>

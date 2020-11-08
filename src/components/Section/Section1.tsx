@@ -1,14 +1,27 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
+import classnames from 'classnames';
 import PrimaryButton from '../Button/Button';
 
 import './Section.scss';
 
 import home1 from '../../images/home1.png';
 
+
 function Section1() {
+
+  const [ref, inView] = useInView({ triggerOnce: true, rootMargin: '10px' });
+
   return (
-    <section className="section__container section__padded">
-      <div className="section__column-left">
+    <section
+      ref={ref}
+      className={`
+        ${classnames({ 'section__animate-in': inView, 'section__animate-out': !inView })}
+        section__container
+        section__padded
+      `}
+    >
+      <div className="section__column">
         <div className="section__header-container">
           <h2 className="section__header">
             Learn. Grow.<br />
@@ -21,7 +34,7 @@ function Section1() {
         </div>
       </div>
       
-      <div className="section__column-right padded">
+      <div className="section__column padded">
         <div className="section__subheader-container">
           <h3 className="section__subheader">
             At Hippo Education, we believe that medical education should upgrade
