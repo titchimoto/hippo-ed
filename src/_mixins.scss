@@ -20,7 +20,6 @@ $font-family-brand: 'Gotham Rounded', 'Lato', 'Helvetica Neue', helvetica, arial
   sans-serif;
 
 // Text
-
 $text-xs: 0.75rem; // 12px
 $text-smlr: 0.8125rem; // 13px
 $text-sm: 0.875rem; // 14px
@@ -38,7 +37,19 @@ $letter-spacing-sm: 0.8px;
 $letter-spacing-md: 1px; 
 $letter-spacing-lg: 2px; 
 
+// Line Height
 $line-height-base: 1.42857143;
+$line-height-md: 24px;
+$line-height-lg: 26px;
+$line-height-xl: 42px;
+$line-height-2xl: 72px;
+
+//Font weights
+$font-weight-base: 400;
+$font-weight-md: 500;
+$font-weight-lg: 600;
+$font-weight-xl: 700;
+
 
 // Homepage Colors
 $hippo-homepage-bg-blue: #4886af;

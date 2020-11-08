@@ -3,6 +3,7 @@ import ImageGrid from './components/ImageGrid/ImageGrid';
 import TopicCloud from './components/TopicCloud/TopicCloud';
 import MainNav from './components/MainNav/MainNav';
 import Header from './components/Header/Header';
+import Section1 from './components/Section/Section1';
 
 import './App.scss';
 
@@ -12,29 +13,7 @@ function App() {
       <MainNav />
       <Header />
       <div className="page-content">
-        <span>Learn. Grow. Thrive.</span>
-
-        <span>
-          At Hippo Education, we believe that medical education should upgrade
-          your practice and your life.
-        </span>
-
-        <span>
-          This lifelong learning should be exciting, and something we look
-          forward to. It should connect us to our fellow clinicians and remind
-          us, as a community, why we practice medicine, not just how. We exist
-          not only to change your practice, but to change your mind about what
-          truly great education can achieve.
-        </span>
-
-        <span>
-          If you want to swap CME that merely checks the boxes for a community
-          of like-minded people learning, growing, and doing their best work
-          together—welcome.You’ve found what you’re looking for.
-        </span>
-
-        <span>Explore Our Products</span>
-
+        <Section1 />
         <span>Education Designed for People Like You</span>
 
         <span>Authentic, Engaging, and Human</span>

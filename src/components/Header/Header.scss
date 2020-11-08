@@ -26,9 +26,10 @@
   line-height: 42px;
   margin-top: 50px;
 
-  @media (min-width: $screen-md-min) {
+  @media (min-width: $screen-sm-min) {
     font-size: $text-5xl;
     line-height: 88px;
     width: 65%;
+    margin-bottom: 25px;
   }
 }

@@ -1,0 +1,13 @@
+@import '../../mixins';
+
+.button__primary-cta {
+  max-width: 345px;
+  width: calc(100vw - 30px);
+  height: 45px;
+  background: $blue;
+  border: 1px solid #2E85EA;
+  box-sizing: border-box;
+  border-radius: $border-radius-sm;
+  color: $white;
+  font-size: $text-base;
+}

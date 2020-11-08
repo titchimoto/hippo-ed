@@ -12,7 +12,7 @@
   font-family: 'Celias';
   src: url('fonts/celias-bold.woff2') format('woff2'),
     url('fonts/celias-bold.woff') format('woff');
-  font-weight: 900;
+  font-weight: 700;
   font-style: bold;
 }
 
@@ -21,6 +21,12 @@
   src: url('fonts/gotham-rounded-medium.otf') format('opentype');
   font-weight: 500;
   font-style: normal;
+}
+
+.hide-mobile {
+  @media (max-width: $screen-sm-min) {
+    display: none;
+  }
 }
 
 .flex-between {
