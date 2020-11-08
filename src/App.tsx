@@ -14,7 +14,9 @@ function App() {
 
   return (
     <div className="homepage">
-      <MainNav />
+      {/* In a production app this would live higher up in the component
+      tree to persist across multiple pages, but for this demo, I've left it here */}
+      <MainNav /> 
       <Header />
       <div className="page-content">
         <Section1 />

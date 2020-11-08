@@ -50,7 +50,15 @@ function TopicCloud() {
                 topic-cloud__topic
               `}
             >
-              {topic.title}
+              {/* This was my attempt to work around animating font-weight to the heavier, bolder
+              weight, which caused some really glitchy/rough animation artifacts. Some work
+              would still be required to prevent the layout shifting when the "bolder" weight
+              is active, due to it taking up more horizontal space in the dom. */}
+               {matchingTopics.includes(topic.title) ? (
+               <strong className="topic-cloud__topic-hover">{topic.title}</strong>
+               ) : (
+                 <span className="topic-cloud__topic-regular">{topic.title}</span>
+               )}
             </div>
           ))}
         </div>
