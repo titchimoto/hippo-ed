@@ -16,20 +16,20 @@
   @media (min-width: $screen-md-min) {
     min-height: 50rem;
   }
-}
 
-.header-container__headline {
-  text-align: center;
-  color: white;
-  width: 88%;
-  font-size: $text-4xl;
-  line-height: 42px;
-  margin-top: 50px;
-
-  @media (min-width: $screen-sm-min) {
-    font-size: $text-5xl;
-    line-height: 88px;
-    width: 65%;
-    margin-bottom: 25px;
+  &__headline {
+    text-align: center;
+    color: white;
+    width: 88%;
+    font-size: $text-4xl;
+    line-height: 42px;
+    margin-top: 50px;
+  
+    @media (min-width: $screen-sm-min) {
+      font-size: $text-5xl;
+      line-height: 88px;
+      width: 65%;
+      margin-bottom: 25px;
+    }
   }
 }

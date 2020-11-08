@@ -20,7 +20,7 @@ function MainNav() {
             <div className="main-nav__products-large">Products</div>
             <div className="main-nav__products-small">from Hippo</div>
           </div>
-          <div className="main-nav__actions_divider"></div>
+          <div className="main-nav__actions-divider"></div>
           <div className="main-nav__signin">
             <button className="main-nav__signin-button">Sign In</button>
           </div>

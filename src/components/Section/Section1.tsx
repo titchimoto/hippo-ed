@@ -5,10 +5,9 @@ import './Section.scss';
 
 import home1 from '../../images/home1.png';
 
-
 function Section1() {
   return (
-    <section className="section__container">
+    <section className="section__container section__padded">
       <div className="section__column-left">
         <div className="section__header-container">
           <h2 className="section__header">
@@ -22,7 +21,7 @@ function Section1() {
         </div>
       </div>
       
-      <div className="section__column-right">
+      <div className="section__column-right padded">
         <div className="section__subheader-container">
           <h3 className="section__subheader">
             At Hippo Education, we believe that medical education should upgrade

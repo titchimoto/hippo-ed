@@ -29,6 +29,12 @@
   }
 }
 
+.hide-desktop {
+  @media (min-width: $screen-sm-min) {
+    display: none;
+  }
+}
+
 .flex-between {
   display: flex;
   align-items: center;
