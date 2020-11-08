@@ -1,13 +1,12 @@
 import React from 'react';
 
 import './MainNav.scss';
-
 import logo from '../../images/hippo_logo.svg';
 import hamburger from '../../images/hamburger.svg';
 
 function MainNav() {
   return (
-    <div className="main-nav">
+    <nav className="main-nav">
       <div className="main-nav__container flex-between">
         <div className="main-nav__hamburger">
           <img src={hamburger} alt="Mobile Menu" />
@@ -26,7 +25,7 @@ function MainNav() {
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 }
 

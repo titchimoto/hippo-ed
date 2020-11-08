@@ -22,8 +22,8 @@ function App() {
         <Section3 />
         <Section4 />
 
-        <div className="section__column">
-          <h2 className="section__header">
+        <div className="section__column content__padded">
+          <h2 className="section__header content__push-right">
             See (and Hear) the Hippo Difference for Yourself
           </h2>
         </div>

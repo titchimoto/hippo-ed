@@ -4,3 +4,21 @@
   margin: auto;
   max-width: $screen-xl-min;
 }
+
+.content {
+  &__push-right {
+    margin-left: 15px;
+
+    @media (min-width: $screen-sm-min) {
+      margin-left: 17%;
+    }
+  }
+
+  &__padded {
+    padding: 5% 0 10%;
+    
+    @media (min-width: $screen-sm-min) {
+      padding: 12% 0 6%;
+    }
+  }
+}

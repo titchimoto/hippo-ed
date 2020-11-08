@@ -6,7 +6,7 @@
 
 .section {
   &__animate-out { 
-    bottom: -120px;
+    bottom: $animate-in-amt;
     position: relative;
     opacity: 0.25;
   }
@@ -15,7 +15,7 @@
     bottom: 0px;
     position: relative;
     opacity: 1;
-    transition: all 3s ease-out;
+    transition: all $animation-time-lg ease-in-out;
   }
 
   &__container {

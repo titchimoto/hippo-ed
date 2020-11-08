@@ -1,26 +1,14 @@
 import React from 'react';
-import { useInView } from 'react-intersection-observer';
-import classnames from 'classnames';
 import PrimaryButton from '../Button/Button';
+import SectionWrapper from './SectionWrapper';
 
 import './Section.scss';
-
 import home1 from '../../images/home1.png';
-
 
 function Section1() {
 
-  const [ref, inView] = useInView({ triggerOnce: true, rootMargin: '10px' });
-
   return (
-    <section
-      ref={ref}
-      className={`
-        ${classnames({ 'section__animate-in': inView, 'section__animate-out': !inView })}
-        section__container
-        section__padded
-      `}
-    >
+    <SectionWrapper padded>
       <div className="section__column">
         <div className="section__header-container">
           <h2 className="section__header">
@@ -64,7 +52,7 @@ function Section1() {
 
         <PrimaryButton />
       </div>
-    </section>
+    </SectionWrapper>
   );
 }
 
