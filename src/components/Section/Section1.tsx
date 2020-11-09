@@ -18,7 +18,6 @@ function Section1() {
           Learn. Grow.<br />
           Thrive.
         </SectionHeader>
-
         <SectionImage src={home1} />
       </div>
       
@@ -35,8 +34,6 @@ function Section1() {
           not only to change your practice, but to change your mind about what
           truly great education can achieve.
         </SectionContent>
-
-
 
         <SectionContent>
           If you want to swap CME that merely checks the boxes for a community

@@ -9,7 +9,6 @@ import './Section.scss';
 import home3 from '../../images/home3.png';
 
 function Section3() {
-
   return (
     <SectionWrapper>
       <div className="section__column">
@@ -28,6 +27,7 @@ function Section3() {
             makes the most of your investment, energy, and intellect and delivers
             a lasting impact far beyond CME credit.
           </SectionContent>
+
           <PrimaryButton />
         </div>
       </div>

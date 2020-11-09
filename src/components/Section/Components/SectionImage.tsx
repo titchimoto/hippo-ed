@@ -1,11 +1,10 @@
 import React from 'react';
 
-type HeaderProps = {
+type Props = {
   src: string;
 }
 
-function SectionImage({ src }: HeaderProps) {
-
+function SectionImage({ src }: Props) {
   return (
     <div className="section__image-container">
       <img src={src} alt="section" />

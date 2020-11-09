@@ -50,7 +50,7 @@ function TopicCloud() {
                 topic-cloud__topic
               `}
             >
-              {/* This was my attempt to work around animating font-weight to the heavier, bolder
+              {/* This was a (potential) attempt to work around animating font-weight to the heavier, bolder
               weight, which caused some really glitchy/rough animation artifacts. Some work
               would still be required to prevent the layout shifting when the "bolder" weight
               is active, due to it taking up more horizontal space in the dom. */}

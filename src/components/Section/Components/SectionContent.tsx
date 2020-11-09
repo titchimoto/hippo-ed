@@ -5,7 +5,6 @@ type HeaderProps = {
 }
 
 function SectionContent({ children }: HeaderProps) {
-
   return (
     <div className="section__content">
       {children}

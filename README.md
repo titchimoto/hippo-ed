@@ -1,3 +1,34 @@
+
+# Hippo Ed
+
+This is my submission for the Hippo Ed technical challenge.  
+
+[Hippo Ed Demo](https://tender-jennings-1373b1.netlify.app/)
+
+# Directions
+```
+yarn install // -> this installs all module goodies
+yarn start // -> to start in local/dev mode on localhost:3000
+```  
+
+## The nitty gritty
+
+There are a number of improvements that given more time, I would choose to make to improve on the overall user experience and the re-usability and extendability of the code. There are a couple of "rough edges" that may be noticeable; small positional differences from the design, some updates to perfect animations, and certainly some efforts that could be made under the hood to improve code re-usability. The specific area of contention being the Section components, and with a little more time, a more fully-realized abstraction to reduce the slight duplication in certain places. 
+
+
+-  __Browser Support:__ There were a couple of technologies that may not have full browser support, specifically IE 11 support. The ones that immediately spring to mind are:
+	- __Intersection Observer__ - I am using this browser API as a quick, lightweight way to trigger the scroll animations when a specific component enters the viewport. This is not supported in IE11, but there is [an excellent polyfill available](https://github.com/w3c/IntersectionObserver/tree/master/polyfill) that could serve this purpose.
+	- __Animations__ - Due to the relative simplicity of the animations involved, I opted to use CSS Transitions to handle the animations. This is well supported in modern browsers, but certain properties do not transition well. I would certainly be open to the potential cross-platform support and stability, as well as the faster iteration loop that an animation library would provide (the `Popmotion` libraries, like `react-pose` being amongst my favorites at the moment!)
+
+- __CSS/Styling__: I opted to use the BEM methodology (as much as possible), and decided to truly go "mobile first" whilst implementing. I approached this by working from the mobile design first and then sculpting media queries to work from there to the desktop version. However, in order to be fully-responsive and "mobile first", I would dedicate some more time to cater to some breakpoints in-between in order to fully ensure a premium experience at every resolution width.
+
+- __Images__: In more of a production environment, I would ideally have these stashed on some kind of CDN (like, cloudfront for example), or at the very least from some form of S3 bucket.
+
+- __Types__: Stricter, smarter typing would be beneficial as the size of the application and React props swell.
+
+
+
+==============================================
 Hippo React Native Frontend Developer Assessment
 ==============================================
 
