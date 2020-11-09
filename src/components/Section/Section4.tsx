@@ -1,5 +1,8 @@
 import React from 'react';
 import SectionWrapper from './SectionWrapper';
+import SectionSubHeader from './Components/SectionSubHeader';
+import SectionImage from './Components/SectionImage';
+import SectionContent from './Components/SectionContent';
 
 import './Section.scss';
 import home4 from '../../images/home4.png';
@@ -10,26 +13,20 @@ function Section4() {
     <SectionWrapper>
       <div className="section__column flex-between">
         <div className="section__column-tight">
-          <div className="section__subheader-container">
-            <h3 className="section__subheader">
-              However and Whenever Your Need It
-            </h3>
+          <SectionSubHeader>
+            However and Whenever Your Need It
+          </SectionSubHeader>
 
-            <div className="section__subheader-underline" />
-          </div>
-
-          <div className="section__content">
+          <SectionContent>
             Get education that seamlessly fits into your busy life with
             convenient, tech-forward podcasts, video lectures, and articles, all
             on the go from your phone or tablet.
-          </div>
+          </SectionContent>
         </div>
       </div>
 
       <div className="section__column">
-        <div className="section__image-container">
-          <img src={home4} alt="section" />
-        </div>
+        <SectionImage src={home4} />
       </div>
     </SectionWrapper>
   );
